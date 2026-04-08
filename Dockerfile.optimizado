@@ -1,0 +1,14 @@
+# Imagen reducida
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Copiamos solo lo necesario primero para usar el cache de capas
+COPY requirements.txt .
+
+# Instalamos sin guardar basura temporal (--no-cache-dir)
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "script.py"]

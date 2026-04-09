@@ -2,7 +2,7 @@
 Este proyecto contiene 3 variantes de Dockerfile para ejecutar un script de Python que procesa datos de un Excel.
 
 ## Integrantes
-- Tu Nombre
+- Santos Zuasnabar, Paulo Nicolas
 
 ## Instrucciones de ejecución
 1. Build: `sudo docker build -t caso2-multi -f Dockerfile.multistage .`
